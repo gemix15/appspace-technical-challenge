@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./components/card/card";
+import Search from "./components/search/search";
 import { Column, Container, Row, Title } from "./styles/app.style";
 import useApi from "./utils/useApi";
 
@@ -12,7 +13,10 @@ const App = () => {
     const [data, setData] = useState([]);
     let { info, results } = data;
 
-    let api = `https://rickandmortyapi.com/api/character/?page=$1`;
+    const [pageNumber, setPageNumber] = useState(1);
+    const [search, setSearch] = useState("");
+
+    let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 
     useEffect(() => {}, [api]);
     useEffect(() => {
@@ -25,6 +29,7 @@ const App = () => {
 return (
     <div className="App">
         <Title>Characters</Title>
+        <Search setSearch={setSearch} setPageNumber={setPageNumber}></Search>
         <Container>
             <Row>
                 Filter Component 
