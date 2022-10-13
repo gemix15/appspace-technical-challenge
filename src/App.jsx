@@ -2,22 +2,23 @@ import React, { useState, useEffect } from "react";
 import Card from "./components/card/card";
 import Search from "./components/search/search";
 import Pagination from "./components/pagination/pagination";
+import Filter from "./components/filter/filter";
 import { Column, Container, Row, Title } from "./styles/app.style";
 import useApi from "./utils/useApi";
 
 
 const App = () => {
-    // const { info, results } = useApi();
-    // console.log(info);
-    // console.log(results);
 
     const [data, setData] = useState([]);
     let { info, results } = data;
 
     const [pageNumber, setPageNumber] = useState(1);
-    const [search, setSearch] = useState("");
+    const [search, setSearch] = useState("");    
 
-    let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
+    const [gender, setGender] = useState("");    
+    const [species, setSpecies] = useState("");
+
+    let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&gender=${gender}&species=${species}`;
 
     useEffect(() => {}, [api]);
     useEffect(() => {
@@ -33,7 +34,7 @@ return (
         <Search setSearch={setSearch} setPageNumber={setPageNumber}></Search>
         <Container>
             <Row>
-                Filter Component 
+                <Filter pageNumber={pageNumber} setGender={setGender} setSpecies={setSpecies} setPageNumber={setPageNumber}></Filter>
                 <Column>
                     <Row>
                         <Card characters={results}></Card>
