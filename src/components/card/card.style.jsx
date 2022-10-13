@@ -2,15 +2,44 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div `
     position: relative;
+    display: flex;
     flex: 0 0 auto;
-    width: 100%;
+    width: 33.33333333%;
     margin-bottom: 1.5rem !important;
-    border: 1px solid blue;
-    @media (min-width: 992px){
-        width: 33.33333333%;
-    }
-    @media (min-width: 576px){
+    font-family: Arial, Helvetica, sans-serif;
+    @media (max-width: 768px){
         width: 50%;
+    }
+    @media (max-width: 576px){
+        width: 100%;
     }
 `
 
+export const InnerCard = styled.div `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid blueviolet;
+    border-radius: 25px 0px;
+    margin: auto 10px;
+`
+
+export const CardImg = styled.img `
+    border-radius: 25px 0px;
+    max-width: 100%;
+    height: auto;
+`
+
+export const CardContent = styled.div `
+    padding: 10px;
+`
+
+export const CardTitle = styled.h1 `
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+`
+export const CardText = styled.p `
+    font-size: 1rem;
+    font-weight: bold;
+`

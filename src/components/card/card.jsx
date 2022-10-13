@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardContainer } from './card.style';
+import { CardContainer, CardContent, CardImg, CardText, CardTitle, InnerCard } from './card.style';
 
 const Card = ({characters}) => {
 
@@ -12,9 +12,22 @@ const Card = ({characters}) => {
         cardInfo = characters.map((character) => {
             let { id, image, name, location } = character;
             return (
-                <CardContainer></CardContainer>
+                <CardContainer key={id}>
+                    <InnerCard>
+                        <CardImg src={image} alt=''></CardImg>
+                        <CardContent>
+                            <CardTitle>{name}</CardTitle>
+                            <div>
+                                <CardText>Last Location</CardText>
+                                <p>{location.name}</p>
+                            </div>
+                        </CardContent>
+                    </InnerCard>
+                </CardContainer>
             )
         })
+    } else {
+        cardInfo = 'No characters Found...';
     }
 
     return (

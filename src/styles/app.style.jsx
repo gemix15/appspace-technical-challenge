@@ -22,13 +22,17 @@ export const Container = styled.div `
 `
 
 export const Row = styled.div `
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-shrink: 0;
+    /* max-width: 100%; */
 `
 
 export const Column = styled.div `
     flex: 0 0 auto;
-    width: 66.66666667%;
     width: 100%;
+    @media (min-width: 992px){
+        width: 66.66666667%;
+    }
 `
