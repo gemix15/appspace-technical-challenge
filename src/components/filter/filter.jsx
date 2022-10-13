@@ -1,6 +1,6 @@
 import React from 'react';
 import Category from './category/category';
-import { FilterAccordion, FilterContainer, FilterText, FilterTitle } from './filter.style';
+import { FilterAccordion, FilterContainer, FilterText, FilterTitle } from './filter.styled';
 
 const Filter = ({ setPageNumber, setGender, setSpecies }) => {
     
