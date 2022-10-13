@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./components/card/card";
 import Search from "./components/search/search";
+import Pagination from "./components/pagination/pagination";
 import { Column, Container, Row, Title } from "./styles/app.style";
 import useApi from "./utils/useApi";
 
@@ -40,6 +41,7 @@ return (
                 </Column>
             </Row>
         </Container>
+        <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber}></Pagination>
     </div>
 )}
 export default App;

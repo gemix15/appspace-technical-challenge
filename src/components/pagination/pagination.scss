@@ -1,0 +1,54 @@
+ul {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: blueviolet;
+    background-color: white;
+    // border: 1px solid blueviolet;
+    border-radius: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 1.5rem 0;
+    gap: 1.5rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rebeccapurple;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 768px){
+    ul{
+        font-size: 12px;
+    }
+    .prev, .next{
+        display: none;
+    }
+}
+
+a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+a:hover, .active {
+    border-top: 1px solid rebeccapurple;
+}
