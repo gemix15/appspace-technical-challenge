@@ -1,5 +1,5 @@
 import React from 'react';
-import { SearchBtn, SearchForm, SearchInput } from './search.style';
+import { SearchBtn, SearchForm, SearchInput } from './search.styled';
 
 const Search = ({ setSearch, setPageNumber }) => {
     let searchButton = (r) => {

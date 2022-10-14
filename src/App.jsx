@@ -1,13 +1,27 @@
 import React, { useState, useEffect } from "react";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Card from "./components/card/card";
 import Search from "./components/search/search";
 import Pagination from "./components/pagination/pagination";
 import Filter from "./components/filter/filter";
 import { Column, Container, Row, Title } from "./styles/app.style";
-import useApi from "./utils/useApi";
+import CardDetails from "./components/card/details/cardDetails";
 
+function App() {
+    return (
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/:id" element={<CardDetails />} />
+          </Routes>
+        </div>
+      </Router>
+    );
+  }
 
-const App = () => {
+const Home = () => {
 
     const [data, setData] = useState([]);
     let { info, results } = data;
@@ -30,14 +44,14 @@ const App = () => {
 
 return (
     <div className="App">
-        <Title>Characters</Title>
+        <Title>Rick & Morty's Characters</Title>
         <Search setSearch={setSearch} setPageNumber={setPageNumber}></Search>
         <Container>
             <Row>
                 <Filter pageNumber={pageNumber} setGender={setGender} setSpecies={setSpecies} setPageNumber={setPageNumber}></Filter>
                 <Column>
                     <Row>
-                        <Card characters={results}></Card>
+                        <Card page="/" characters={results}></Card>
                     </Row>
                 </Column>
             </Row>
@@ -45,4 +59,5 @@ return (
         <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber}></Pagination>
     </div>
 )}
+
 export default App;

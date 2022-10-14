@@ -21,7 +21,7 @@ export const AccordionButton = styled.button `
     text-align: right;
     background-color: white;
     border: 2px solid rebeccapurple;
-    border-radius: 5%;
+    border-radius: 20% 0;
     overflow-anchor: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 `
@@ -32,7 +32,7 @@ export const AccordionBody = styled.div `
     flex-wrap: wrap;
     gap: .7rem !important;
     width: 100%;
-    max-height: ${(props) => (props.open ? '100px' : '0')};
+    max-height: ${(props) => (props.open ? '300px' : '0')};
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     padding-bottom: ${(props) => (props.open ? '1rem;' : '0')};

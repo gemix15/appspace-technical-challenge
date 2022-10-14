@@ -4,15 +4,9 @@ export const CardContainer = styled.div `
     position: relative;
     display: flex;
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 100%;
     margin-bottom: 1.5rem !important;
     font-family: Arial, Helvetica, sans-serif;
-    @media (max-width: 768px){
-        width: 50%;
-    }
-    @media (max-width: 576px){
-        width: 100%;
-    }
 `
 
 export const InnerCard = styled.div `

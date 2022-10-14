@@ -3,7 +3,6 @@ ul {
     font-size: 1rem;
     color: blueviolet;
     background-color: white;
-    // border: 1px solid blueviolet;
     border-radius: 5px;
     display: flex;
     list-style: none;
@@ -40,7 +39,7 @@ li {
     }
 }
 
-a {
+ul li a {
     position: relative;
     display: block;
     padding: 10px;
@@ -49,6 +48,7 @@ a {
     color: rebeccapurple;
 }
 
-a:hover, .active {
-    border-top: 1px solid rebeccapurple;
+li a:hover, .active {
+    border-bottom: 2px solid blueviolet;
 }
+

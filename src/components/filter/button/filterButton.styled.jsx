@@ -11,7 +11,7 @@ export const FilterInput = styled.input `
 
 export const FilterLabel = styled.label `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
-    width: 4.7rem;
+    width: fit-content;
     height: 2rem;
     display: inline-block;
     padding: .2rem;

@@ -5,7 +5,7 @@ import { FilterAccordion, FilterContainer, FilterText, FilterTitle } from './fil
 const Filter = ({ setPageNumber, setGender, setSpecies }) => {
     
     let genderFilters = ["Female", "Male", "Genderless", "Unknown"];
-    let speciesFilters = ["Human", "Alien", "Humanoid", "Poppybutthole", "Mythological",
+    let speciesFilters = ["Human", "Alien", "Humanoid", "Poopybutthole", "Mythological",
     "Unknown", "Animal", "Disease", "Robot", "Cronenberg", "Planet"];
 
     let clear = () => {
