@@ -9,7 +9,7 @@ export const Title = styled.h1 `
 
 export const Container = styled.div `
     padding: 0 15px;
-    margin: 0 auto;
+    margin: 2rem auto;
     @media (min-width: 768px){
         width: 750px;
     }

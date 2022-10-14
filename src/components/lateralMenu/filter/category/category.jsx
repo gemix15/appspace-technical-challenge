@@ -1,6 +1,6 @@
 import FilterButton from "../button/filterButton";
 import React, { useState } from 'react';
-import { AccordionBody, AccordionButton, AccordionItem } from "./category-styled";
+import { AccordionBody, AccordionButton, AccordionItem } from "./category.styled";
 
 const Category = ({ title, categories, setCategory, setPageNumber }) => {
 

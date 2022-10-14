@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Card from "./components/card/card";
 import Search from "./components/search/search";
 import Pagination from "./components/pagination/pagination";
-import Filter from "./components/filter/filter";
+import LateralMenu from "./components/lateralMenu/lateralMenu";
 import { Column, Container, Row, Title } from "./styles/app.style";
 import CardDetails from "./components/card/details/cardDetails";
 
@@ -48,7 +48,7 @@ return (
         <Search setSearch={setSearch} setPageNumber={setPageNumber}></Search>
         <Container>
             <Row>
-                <Filter pageNumber={pageNumber} setGender={setGender} setSpecies={setSpecies} setPageNumber={setPageNumber}></Filter>
+                <LateralMenu pageNumber={pageNumber} setGender={setGender} setSpecies={setSpecies} setPageNumber={setPageNumber}></LateralMenu>
                 <Column>
                     <Row>
                         <Card page="/" characters={results}></Card>
