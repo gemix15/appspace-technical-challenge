@@ -22,9 +22,8 @@ export const FilterLabel = styled.label `
     vertical-align: middle;
     line-height: 1.5;
     font-size: .95rem;
-
     cursor: pointer;
-    border-radius: 5%;
+    /* border-radius: 5%; */
     border: 2px solid blueviolet;
     user-select: none;
     :hover {

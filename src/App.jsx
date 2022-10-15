@@ -31,6 +31,7 @@ const Home = () => {
 
     const [gender, setGender] = useState("");    
     const [species, setSpecies] = useState("");
+    const [orderByField, setOrderByField] = useState('');
 
     let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&gender=${gender}&species=${species}`;
 
@@ -43,15 +44,15 @@ const Home = () => {
     }, [api]);
 
 return (
-    <div className="App">
+    <div>
         <Title>Rick & Morty's Characters</Title>
         <Search setSearch={setSearch} setPageNumber={setPageNumber}></Search>
         <Container>
             <Row>
-                <LateralMenu pageNumber={pageNumber} setGender={setGender} setSpecies={setSpecies} setPageNumber={setPageNumber}></LateralMenu>
+                <LateralMenu setGender={setGender} setSpecies={setSpecies} setPageNumber={setPageNumber} setOrderByField={setOrderByField}></LateralMenu>
                 <Column>
                     <Row>
-                        <Card page="/" characters={results}></Card>
+                        <Card page="/" characters={results} orderByField={orderByField}></Card>
                     </Row>
                 </Column>
             </Row>

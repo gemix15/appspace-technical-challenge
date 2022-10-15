@@ -19,7 +19,8 @@ export const InnerCard = styled.div `
 `
 
 export const CardImg = styled.img `
-    border-radius: 25px 0px;
+    border-radius: 100%;
+    margin: 1rem;
     max-width: 100%;
     height: auto;
 `
@@ -29,11 +30,14 @@ export const CardContent = styled.div `
 `
 
 export const CardTitle = styled.h1 `
+    text-align: center;
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 5px;
+    color: rebeccapurple;
 `
 export const CardText = styled.p `
+    text-align: center;
     font-size: 1rem;
     font-weight: bold;
 `

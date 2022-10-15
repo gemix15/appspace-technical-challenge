@@ -21,7 +21,7 @@ export const AccordionButton = styled.button `
     text-align: right;
     background-color: white;
     border: 2px solid rebeccapurple;
-    border-radius: 20% 0;
+    /* border-radius: 7%; */
     overflow-anchor: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 `
