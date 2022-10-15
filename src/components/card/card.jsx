@@ -14,7 +14,7 @@ const Card = ({page, characters, orderByField}) => {
 
     if (characters) { 
         cardInfo = characters.map((character) => {
-            let { id, image, name, location, species } = character;
+            let { id, image, name, status, species } = character;
             return (
                 <Link to={`${page}${id}`} key={id} style={{width: "auto", textDecoration: "none", color: "black", margin:"auto"}}>
                     <CardContainer>
@@ -23,8 +23,8 @@ const Card = ({page, characters, orderByField}) => {
                             <CardContent>
                                 <CardTitle>{name}</CardTitle>
                                 <div>
-                                    <CardText>Species: </CardText>
-                                    <p style={{textAlign: "center"}}>{species}</p>
+                                    <CardText>{species}</CardText>
+                                    <CardText>{status}</CardText>
                                 </div>
                             </CardContent>
                         </InnerCard>

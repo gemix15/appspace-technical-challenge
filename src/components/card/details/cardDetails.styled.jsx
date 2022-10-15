@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const CardDGeneral = styled.div `
-    width: 100%;
+export const CardDetailGeneral = styled.div `
     padding-right: calc(1.5rem * 0.5);
     padding-left: calc(1.5rem * 0.5);
     margin-right: auto;
@@ -12,7 +11,7 @@ export const CardDGeneral = styled.div `
     font-family: Arial, Helvetica, sans-serif;
 `
 
-export const CardDContainer = styled.div `
+export const CardDetailContainer = styled.div `
     border: 2px solid #134611;
     background-color: #134611;
     box-shadow: 17px 9px 37px -15px rgba(62,137,20,1);
@@ -24,7 +23,7 @@ export const CardDContainer = styled.div `
     padding: 1rem;
 `
 
-export const CardDTitle = styled.h1 `
+export const CardDetailTitle = styled.h1 `
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
@@ -34,18 +33,18 @@ export const CardDTitle = styled.h1 `
     border-radius: 5px;
 `
 
-export const CardDImg = styled.img `
+export const CardDetailImage = styled.img `
     max-width: 100%;
     height: auto;
     border-radius: 100%;
 `
 
-export const CardDSpan = styled.span `
+export const CardDetailSpan = styled.span `
     font-weight: bold;
     font-size: 1.2rem;
 `
 
-export const CardDBack = styled.button `
+export const CardDetailBack = styled.button `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     width: 5rem;
     height: 3rem;

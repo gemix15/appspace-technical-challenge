@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { CardDBack, CardDContainer, CardDGeneral, CardDImg, CardDSpan, CardDTitle } from './cardDetails.styled';
+import { CardDetailBack, CardDetailContainer, CardDetailGeneral, CardDetailImage, CardDetailSpan, CardDetailTitle } from './cardDetails.styled';
+import Rick from "../../../img/rick.png";
 
 const CardDetails = () => {
     let {id} = useParams();
     const [data, setData] = useState([]);
-    let { name, location, origin, gender, image, species } = data;
+    let { name, status, species, type, gender, origin, location, image } = data;
 
     let api = `https://rickandmortyapi.com/api/character/${id}`;
 
@@ -18,29 +19,43 @@ const CardDetails = () => {
 
     let navigate = useNavigate();
 
+    if(data?.error) {
+        return (
+            <>
+                <CardDetailBack onClick={() => navigate('/')}>Back</CardDetailBack>
+                <img alt='Rick found no characters.' src={Rick} style={{width:"auto", height:"15rem"}}></img>
+            </>
+        )
+    }
     return (
         <>
-            <CardDBack onClick={() => navigate(-1)}>Back</CardDBack>
-            <CardDGeneral>
-                <CardDContainer>
-                    <CardDTitle>{name}</CardDTitle>
-                    <CardDImg src={image} alt=""></CardDImg>
+            <CardDetailBack onClick={() => navigate('/')}>Back</CardDetailBack>
+            <CardDetailGeneral>
+                <CardDetailContainer>
+                    <CardDetailTitle>{name}</CardDetailTitle>
+                    <CardDetailImage src={image} alt=""></CardDetailImage>
                     <div style={{backgroundColor: "#e8fccf", borderRadius: "5px", padding:"1rem"}}>
                         <div>
-                            <CardDSpan>Gender: </CardDSpan>{gender}
+                            <CardDetailSpan>Status: </CardDetailSpan>{status}
                         </div>
                         <div>
-                            <CardDSpan>Location: </CardDSpan>{location?.name}
+                            <CardDetailSpan>Gender: </CardDetailSpan>{gender}
                         </div>
                         <div>
-                            <CardDSpan>Origin: </CardDSpan>{origin?.name}
+                            <CardDetailSpan>Location: </CardDetailSpan>{location?.name}
                         </div>
                         <div>
-                            <CardDSpan>Species: </CardDSpan>{species}
+                            <CardDetailSpan>Origin: </CardDetailSpan>{origin?.name}
+                        </div>
+                        <div>
+                            <CardDetailSpan>Species: </CardDetailSpan>{species}
+                        </div>
+                        <div>
+                            <CardDetailSpan>Type: </CardDetailSpan>{type === '' ? "unknown" : type}
                         </div>
                     </div>
-                </CardDContainer>
-            </CardDGeneral>
+                </CardDetailContainer>
+            </CardDetailGeneral>
         </>
     );
 }
