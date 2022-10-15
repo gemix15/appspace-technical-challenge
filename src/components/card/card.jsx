@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { CardContainer, CardContent, CardImg, CardText, CardTitle, InnerCard } from './card.styled';
+import Rick from "../../img/rick.png";
 
 const Card = ({page, characters, orderByField}) => {
 
@@ -32,7 +33,7 @@ const Card = ({page, characters, orderByField}) => {
             )
         })}
     } else {
-        cardInfo = 'No characters Found...';
+        cardInfo = <img alt='Rick found no characters.' src={Rick} style={{width:"auto", height:"15rem"}}></img>;
     }
 
     return (

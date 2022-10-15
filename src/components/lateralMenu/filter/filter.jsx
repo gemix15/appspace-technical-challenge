@@ -17,7 +17,8 @@ const Filter = ({ setPageNumber, setGender, setSpecies }) => {
     return (
         <>
         <FilterTitle>Filters</FilterTitle>
-        <FilterText onClick={clear}>Clear Filters</FilterText><FilterAccordion id='accordion'>
+        <FilterText onClick={clear}>Clear Filters</FilterText>
+        <FilterAccordion id='accordion'>
             <Category title="Gender" setPageNumber={setPageNumber} categories={genderFilters} setCategory={setGender}></Category>
             <Category title="Species" setPageNumber={setPageNumber} categories={speciesFilters} setCategory={setSpecies}></Category>
         </FilterAccordion>

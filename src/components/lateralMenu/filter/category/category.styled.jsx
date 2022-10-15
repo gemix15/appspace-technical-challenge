@@ -4,7 +4,6 @@ export const AccordionItem = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
     height: auto;
     padding: 2%;
     text-align: center;
@@ -17,20 +16,23 @@ export const AccordionButton = styled.button `
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
-    color: rebeccapurple;
+    color: white;
     text-align: right;
-    background-color: white;
-    border: 2px solid rebeccapurple;
-    /* border-radius: 7%; */
+    background-color: #134611;
+    border: 2px solid #134611;
+    border-radius: 5px;
     overflow-anchor: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    :hover{
+        background-color: #3e8914;
+        border: 2px solid #3e8914;
+    }
 `
 
 export const AccordionBody = styled.div `
     padding: ${(props) => (props.open ? '0.3rem;' : '0')};
     display: flex;
     flex-wrap: wrap;
-    gap: .7rem !important;
+    gap: .7rem;
     width: 100%;
     max-height: ${(props) => (props.open ? '300px' : '0')};
     transition: all 0.4s ease-in-out;

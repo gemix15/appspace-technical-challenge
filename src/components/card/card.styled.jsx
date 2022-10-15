@@ -5,7 +5,7 @@ export const CardContainer = styled.div `
     display: flex;
     flex: 0 0 auto;
     width: 100%;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
 `
 
@@ -13,9 +13,15 @@ export const InnerCard = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid blueviolet;
-    border-radius: 25px 0px;
+    border: 5px solid #134611;
+    border-radius: 5%;
     margin: auto 10px;
+    box-shadow: 17px 9px 37px -15px rgba(62,137,20,1);
+    transition: all 0.5s;
+    :hover {
+        box-shadow: 17px 9px 37px -15px rgba(150,224,114,1);
+        border: 5px solid #3e8914;
+    }
 `
 
 export const CardImg = styled.img `
@@ -34,7 +40,9 @@ export const CardTitle = styled.h1 `
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 5px;
-    color: rebeccapurple;
+    color: #134611;
+    border-top: 2px solid #134611;
+    padding-top: 0.5rem;
 `
 export const CardText = styled.p `
     text-align: center;

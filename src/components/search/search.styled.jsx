@@ -12,7 +12,7 @@ export const SearchForm = styled.form `
 export const SearchInput = styled.input `
     width: 40%;
     border-radius: 7px;
-    border: 2px solid blueviolet;
+    border: 2px solid #134611;
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     padding: 10px 15px;
     &:focus {outline: none;}
@@ -25,16 +25,16 @@ export const SearchBtn = styled.button `
     display: inline-block;
     padding: 3px;
     color: white;
-    background-color: blueviolet;
+    background-color: #3e8914;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 10%;
-    border: 2px solid blueviolet;
+    border: 2px solid #3e8914;
     :hover {
-        background-color: rebeccapurple;
-        border: 2px solid rebeccapurple;
+        background-color: #134611;
+        border: 2px solid #134611;
     }
 ` 

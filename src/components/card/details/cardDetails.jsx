@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { CardDContainer, CardDGeneral, CardDImg, CardDSpan, CardDTitle } from './cardDetails.styled';
+import { useParams, useNavigate } from 'react-router-dom';
+import { CardDBack, CardDContainer, CardDGeneral, CardDImg, CardDSpan, CardDTitle } from './cardDetails.styled';
 
 const CardDetails = () => {
     let {id} = useParams();
@@ -16,27 +16,32 @@ const CardDetails = () => {
         })();
     }, [api]);
 
+    let navigate = useNavigate();
+
     return (
-        <CardDGeneral>
-            <CardDContainer>
-                <CardDTitle>{name}</CardDTitle>
-                <CardDImg src={image} alt=""></CardDImg>
-                <div>
-                    <div>
-                        <CardDSpan>Gender: </CardDSpan>{gender}
+        <>
+            <CardDBack onClick={() => navigate(-1)}>Back</CardDBack>
+            <CardDGeneral>
+                <CardDContainer>
+                    <CardDTitle>{name}</CardDTitle>
+                    <CardDImg src={image} alt=""></CardDImg>
+                    <div style={{backgroundColor: "#e8fccf", borderRadius: "5px", padding:"1rem"}}>
+                        <div>
+                            <CardDSpan>Gender: </CardDSpan>{gender}
+                        </div>
+                        <div>
+                            <CardDSpan>Location: </CardDSpan>{location?.name}
+                        </div>
+                        <div>
+                            <CardDSpan>Origin: </CardDSpan>{origin?.name}
+                        </div>
+                        <div>
+                            <CardDSpan>Species: </CardDSpan>{species}
+                        </div>
                     </div>
-                    <div>
-                        <CardDSpan>Location: </CardDSpan>{location?.name}
-                    </div>
-                    <div>
-                        <CardDSpan>Origin: </CardDSpan>{origin?.name}
-                    </div>
-                    <div>
-                        <CardDSpan>Species: </CardDSpan>{species}
-                    </div>
-                </div>
-            </CardDContainer>
-        </CardDGeneral>
+                </CardDContainer>
+            </CardDGeneral>
+        </>
     );
 }
 

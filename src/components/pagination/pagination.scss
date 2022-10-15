@@ -1,8 +1,6 @@
 ul {
     padding: 0.5rem;
     font-size: 1rem;
-    color: blueviolet;
-    background-color: white;
     border-radius: 5px;
     display: flex;
     list-style: none;
@@ -18,7 +16,6 @@ li {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: rebeccapurple;
     background: transparent;
     border: 1px solid transparent;
     border-radius: 0.3rem;
@@ -45,10 +42,10 @@ ul li a {
     padding: 10px;
     font-size: 1rem;
     text-decoration: none;
-    color: rebeccapurple;
+    color: #134611;
 }
 
 li a:hover, .active {
-    border-bottom: 2px solid blueviolet;
+    border-bottom: 2px solid #134611;
 }
 

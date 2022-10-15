@@ -9,16 +9,16 @@ export const FilterTitle = styled.h1 `
 
 export const FilterText = styled.p `
     text-decoration: underline;
-    color: blueviolet;
+    color: #3e8914;
     text-align: center;
     margin-bottom: 0.7rem;
     cursor: pointer;
     font-size: .9rem;
+    :hover{
+        color: #134611;
+    }
 `
 
 export const FilterAccordion = styled.div `
-    color: blueviolet;
-    background-color: white;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
     padding: 1rem 1.2rem;
 `

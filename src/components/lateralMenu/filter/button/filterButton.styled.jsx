@@ -16,22 +16,18 @@ export const FilterLabel = styled.label `
     display: inline-block;
     padding: .2rem;
     color: white;
-    background-color: blueviolet;
+    background-color: #3e8914;
+    border: 2px solid #3e8914;
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
     line-height: 1.5;
     font-size: .95rem;
     cursor: pointer;
-    /* border-radius: 5%; */
-    border: 2px solid blueviolet;
     user-select: none;
     :hover {
-        background-color: rebeccapurple;
-        border: 2px solid rebeccapurple;
-    }
-    .active {
-        background-color: rebeccapurple;
-        border: 2px solid rebeccapurple;
+        background-color: #134611;
+        border: 2px solid #134611;
     }
 `
