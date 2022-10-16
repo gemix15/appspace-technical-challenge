@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import { CardContainer, CardContent, CardImg, CardText, CardTitle, InnerCard } from './card.styled';
+import { CardContainer, CardContent, CardImg, CardText, CardTitle, InnerCard } from "./card.styled";
 import Rick from "../../img/Rick-notFound.png";
 
 const Card = ({page, characters, orderByField}) => {
@@ -8,7 +8,7 @@ const Card = ({page, characters, orderByField}) => {
     let cardInfo;
 
     if(characters){
-        if (orderByField === 'Name') {
+        if (orderByField === "Name") {
             characters = [...characters].sort((a, b) => a.name > b.name ? 1 : -1,);
         }
 
@@ -30,16 +30,16 @@ const Card = ({page, characters, orderByField}) => {
                         </InnerCard>
                     </CardContainer>
                 </Link>
-            )
-        })}
+            );
+        });}
     } else {
         cardInfo = <img alt='Rick found no characters.' src={Rick} style={{width:"auto", height:"15rem"}}></img>;
     }
 
     return (
         <>{cardInfo}</>
-    )
-}
+    );
+};
 
 export default Card;
 

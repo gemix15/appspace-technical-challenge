@@ -7,7 +7,7 @@ export const SearchForm = styled.form `
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 5px;
-`
+`;
 
 export const SearchInput = styled.input `
     width: 40%;
@@ -19,7 +19,7 @@ export const SearchInput = styled.input `
     @media (max-width: 576px){
         width: 90%;
     }
-`
+`;
 
 export const SearchBtn = styled.button `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
@@ -43,4 +43,4 @@ export const SearchBtn = styled.button `
     @media (max-width: 576px){
         display: none;
     }
-` 
+`; 

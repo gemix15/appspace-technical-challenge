@@ -21,7 +21,7 @@ const Home = () => {
 
     const [gender, setGender] = useState("");    
     const [species, setSpecies] = useState("");
-    const [orderByField, setOrderByField] = useState('');
+    const [orderByField, setOrderByField] = useState("");
 
     let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&gender=${gender}&species=${species}`;
 
@@ -51,6 +51,6 @@ return (
         </Container>
         <Pagination info={info} pageNumber={pageNumber} setPageNumber={setPageNumber}></Pagination>
     </div>
-)}
+);};
 
 export default Home;

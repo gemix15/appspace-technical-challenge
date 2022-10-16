@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import NotFound from '../../../pages/notFound/notFound';
-import Loading from '../../loading/loading';
-import { CardDetailBack, CardDetailContainer, CardDetailGeneral, CardDetailImage, CardDetailSpan, CardDetailTitle } from './cardDetails.styled';
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import NotFound from "../../../pages/notFound/notFound";
+import Loading from "../../loading/loading";
+import { CardDetailBack, CardDetailContainer, CardDetailGeneral, CardDetailImage, CardDetailSpan, CardDetailTitle } from "./cardDetails.styled";
 
 const CardDetails = () => {
 
@@ -30,18 +30,18 @@ const CardDetails = () => {
             <>
                 <Loading/>
             </>
-        )
+        );
     }
     if(data?.error) {
         return (
             <>
                 <NotFound/>
             </>
-        )
+        );
     }
     return (
         <>
-            <CardDetailBack onClick={() => navigate('/')}>Back</CardDetailBack>
+            <CardDetailBack onClick={() => navigate("/")}>Back</CardDetailBack>
             <CardDetailGeneral>
                 <CardDetailContainer>
                     <CardDetailTitle>{name}</CardDetailTitle>
@@ -63,13 +63,13 @@ const CardDetails = () => {
                             <CardDetailSpan>Species: </CardDetailSpan>{species}
                         </div>
                         <div>
-                            <CardDetailSpan>Type: </CardDetailSpan>{type === '' ? "unknown" : type}
+                            <CardDetailSpan>Type: </CardDetailSpan>{type === "" ? "unknown" : type}
                         </div>
                     </div>
                 </CardDetailContainer>
             </CardDetailGeneral>
         </>
     );
-}
+};
 
 export default CardDetails;

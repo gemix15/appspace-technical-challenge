@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import ReactPaginate from 'react-paginate';
-import './pagination.scss';
+import React, { useState, useEffect } from "react";
+import ReactPaginate from "react-paginate";
+import "./pagination.scss";
 
 const Pagination = ({ pageNumber, info, setPageNumber }) => {
 
@@ -13,8 +13,8 @@ const Pagination = ({ pageNumber, info, setPageNumber }) => {
         setWidth(window.innerWidth);
     };
     useEffect(() => {
-        window.addEventListener('resize', setDimensions);
-        return () => window.removeEventListener('resize', setDimensions);
+        window.addEventListener("resize", setDimensions);
+        return () => window.removeEventListener("resize", setDimensions);
     }, []);
 
     return (
@@ -27,6 +27,6 @@ const Pagination = ({ pageNumber, info, setPageNumber }) => {
             ></ReactPaginate>
         </>
     );
-}
+};
 
 export default Pagination;

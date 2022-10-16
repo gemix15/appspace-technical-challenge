@@ -1,6 +1,6 @@
-import React from 'react';
-import RickLoading from '../../img/Rick-loading.png'
-import { LoadingImage, LoadingText } from './loading.styled';
+import React from "react";
+import RickLoading from "../../img/Rick-loading.png";
+import { LoadingImage, LoadingText } from "./loading.styled";
 
 const Loading = () => {
     return (
@@ -9,6 +9,6 @@ const Loading = () => {
             <LoadingImage alt='Loading' src={RickLoading} />
         </>
     );
-}
+};
 
 export default Loading;

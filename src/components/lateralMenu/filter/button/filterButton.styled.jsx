@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const FilterForm = styled.form `
     display: block;
     margin: 0.3rem auto;
-`
+`;
 
 export const FilterInput = styled.input `
     display: none;
-`
+`;
 
 export const FilterLabel = styled.label `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
@@ -33,4 +33,4 @@ export const FilterLabel = styled.label `
     @media (max-width: 576px){
         height: 1.2rem;
     }
-`
+`;

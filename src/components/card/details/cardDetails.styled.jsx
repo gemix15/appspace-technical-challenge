@@ -9,7 +9,7 @@ export const CardDetailGeneral = styled.div `
     justify-content: center;
     margin-bottom: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-`
+`;
 
 export const CardDetailContainer = styled.div `
     border: 2px solid #134611;
@@ -21,7 +21,7 @@ export const CardDetailContainer = styled.div `
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-`
+`;
 
 export const CardDetailTitle = styled.h1 `
     text-align: center;
@@ -31,18 +31,18 @@ export const CardDetailTitle = styled.h1 `
     background-color: #96e072;
     padding: 0.5rem;
     border-radius: 5px;
-`
+`;
 
 export const CardDetailImage = styled.img `
     max-width: 100%;
     height: auto;
     border-radius: 100%;
-`
+`;
 
 export const CardDetailSpan = styled.span `
     font-weight: bold;
     font-size: 1.2rem;
-`
+`;
 
 export const CardDetailBack = styled.button `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
@@ -65,4 +65,4 @@ export const CardDetailBack = styled.button `
         background-color: #134611;
         border: 2px solid #134611;
     }
-`
+`;

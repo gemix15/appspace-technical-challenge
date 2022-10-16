@@ -1,5 +1,5 @@
-import React from 'react';
-import { SorterButton, SorterContainer, SorterTitle } from './sorter.styled';
+import React from "react";
+import { SorterButton, SorterContainer, SorterTitle } from "./sorter.styled";
 
 const Sorter = ({setResult, setPageNumber}) => {
     let allowedFields = ["Id", "Name"];
@@ -14,11 +14,11 @@ const Sorter = ({setResult, setPageNumber}) => {
                                     setPageNumber(1);
                                 }}>{item}
                             </SorterButton>
-                        )
+                        );
                     })}
             </SorterContainer>
         </>
     );
-}
+};
 
 export default Sorter;

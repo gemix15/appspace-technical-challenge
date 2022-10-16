@@ -11,7 +11,7 @@ export const Logo = styled.img `
     width: auto; 
     height: 6rem;
     margin-bottom: -1rem;
-`
+`;
 
 export const Container = styled.div `
     padding: 0 15px;
@@ -25,14 +25,14 @@ export const Container = styled.div `
     @media (min-width: 1200px){
         width: 1170px;
     }
-`
+`;
 
 export const Row = styled.div `
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-`
+`;
 
 export const Column = styled.div `
     display: flex;
@@ -41,4 +41,4 @@ export const Column = styled.div `
     @media (min-width: 992px){
         width: 66.66666667%;
     }
-`
+`;

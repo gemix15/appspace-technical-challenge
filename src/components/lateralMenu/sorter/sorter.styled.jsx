@@ -14,14 +14,14 @@ export const SorterContainer = styled.div `
     @media (max-width: 576px){
         margin: .2rem;
     }
-`
+`;
 
 export const SorterTitle = styled.h1 `
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 0;
-`
+`;
 
 export const SorterButton = styled.button `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
@@ -47,4 +47,4 @@ export const SorterButton = styled.button `
         background-color: #134611;
         border: 2px solid #134611;
     }
-`
+`;

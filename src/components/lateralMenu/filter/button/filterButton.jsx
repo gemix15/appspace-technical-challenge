@@ -1,5 +1,5 @@
-import React from 'react';
-import { FilterForm, FilterInput, FilterLabel } from './filterButton.styled';
+import React from "react";
+import { FilterForm, FilterInput, FilterLabel } from "./filterButton.styled";
 
 const FilterButton = ({ input, task, setPageNumber, index, name }) => {
     return (
@@ -11,6 +11,6 @@ const FilterButton = ({ input, task, setPageNumber, index, name }) => {
             }}>{input}</FilterLabel>
         </FilterForm>
     );
-}
+};
 
 export default FilterButton;

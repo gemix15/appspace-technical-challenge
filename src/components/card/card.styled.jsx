@@ -7,7 +7,7 @@ export const CardContainer = styled.div `
     width: 100%;
     margin-bottom: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-`
+`;
 
 export const InnerCard = styled.div `
     display: flex;
@@ -22,18 +22,18 @@ export const InnerCard = styled.div `
         box-shadow: 17px 9px 37px -15px rgba(150,224,114,1);
         border: 5px solid #3e8914;
     }
-`
+`;
 
 export const CardImg = styled.img `
     border-radius: 100%;
     margin: 1rem;
     max-width: 100%;
     height: auto;
-`
+`;
 
 export const CardContent = styled.div `
     padding: 10px;
-`
+`;
 
 export const CardTitle = styled.h1 `
     text-align: center;
@@ -43,9 +43,9 @@ export const CardTitle = styled.h1 `
     color: #134611;
     border-top: 2px solid #134611;
     padding-top: 0.5rem;
-`
+`;
 export const CardText = styled.p `
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
-`
+`;

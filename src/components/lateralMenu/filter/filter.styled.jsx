@@ -8,7 +8,7 @@ export const FilterTitle = styled.h1 `
     @media ( max-width:576px){
         margin-top: 0;
     }
-`
+`;
 
 export const FilterText = styled.p `
     text-decoration: underline;
@@ -23,8 +23,8 @@ export const FilterText = styled.p `
     @media ( max-width:576px){
         margin-bottom: 0;
     }
-`
+`;
 
 export const FilterAccordion = styled.div `
     padding: 1rem 1.2rem;
-`
+`;

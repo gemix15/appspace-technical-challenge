@@ -1,6 +1,6 @@
-import React from 'react';
-import { FilterAccordion, FilterText, FilterTitle } from './filter.styled';
-import Category from './category/category';
+import React from "react";
+import { FilterAccordion, FilterText, FilterTitle } from "./filter.styled";
+import Category from "./category/category";
 
 const Filter = ({ setPageNumber, setGender, setSpecies }) => {
     let genderFilters = ["Female", "Male", "Genderless", "Unknown"];
@@ -8,11 +8,11 @@ const Filter = ({ setPageNumber, setGender, setSpecies }) => {
     "Unknown", "Animal", "Disease", "Robot", "Cronenberg", "Planet"];
 
     let clear = () => {
-        setGender('');
-        setSpecies('');
+        setGender("");
+        setSpecies("");
         setPageNumber(1);
         window.location.reload(false);
-    }
+    };
 
     return (
         <>
@@ -24,6 +24,6 @@ const Filter = ({ setPageNumber, setGender, setSpecies }) => {
         </FilterAccordion>
         </>
     );
-}
+};
 
 export default Filter;

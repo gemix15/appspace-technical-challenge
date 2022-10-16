@@ -7,7 +7,7 @@ export const AccordionItem = styled.div `
     height: auto;
     padding: 2%;
     text-align: center;
-`
+`;
 
 export const AccordionButton = styled.button `
     position: relative;
@@ -26,16 +26,16 @@ export const AccordionButton = styled.button `
         background-color: #3e8914;
         border: 2px solid #3e8914;
     }
-`
+`;
 
 export const AccordionBody = styled.div `
-    padding: ${(props) => (props.open ? '0.3rem;' : '0')};
+    padding: ${(props) => (props.open ? "0.3rem;" : "0")};
     display: flex;
     flex-wrap: wrap;
     gap: .7rem;
     width: 100%;
-    max-height: ${(props) => (props.open ? '300px' : '0')};
+    max-height: ${(props) => (props.open ? "300px" : "0")};
     transition: all 0.4s ease-in-out;
     overflow: hidden;
-    padding-bottom: ${(props) => (props.open ? '1rem;' : '0')};
-`
+    padding-bottom: ${(props) => (props.open ? "1rem;" : "0")};
+`;
