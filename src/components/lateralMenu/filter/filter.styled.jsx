@@ -5,6 +5,9 @@ export const FilterTitle = styled.h1 `
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    @media ( max-width:576px){
+        margin-top: 0;
+    }
 `
 
 export const FilterText = styled.p `
@@ -16,6 +19,9 @@ export const FilterText = styled.p `
     font-size: .9rem;
     :hover{
         color: #134611;
+    }
+    @media ( max-width:576px){
+        margin-bottom: 0;
     }
 `
 

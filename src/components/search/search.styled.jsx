@@ -16,6 +16,9 @@ export const SearchInput = styled.input `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     padding: 10px 15px;
     &:focus {outline: none;}
+    @media (max-width: 576px){
+        width: 90%;
+    }
 `
 
 export const SearchBtn = styled.button `
@@ -36,5 +39,8 @@ export const SearchBtn = styled.button `
     :hover {
         background-color: #134611;
         border: 2px solid #134611;
+    }
+    @media (max-width: 576px){
+        display: none;
     }
 ` 

@@ -1,33 +1,32 @@
 import styled from "styled-components";
 
 export const SorterContainer = styled.div `
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
     width: auto;
     height: auto;
-    margin: 2rem;
     border-radius: 5px;
-    padding: 1.5rem;
+    padding: 1.5rem;  
+    text-align: center;
+    justify-content: center;
+    gap: .7rem;
+    @media (max-width: 576px){
+        margin: .2rem;
+    }
 `
 
 export const SorterTitle = styled.h1 `
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-`
-
-export const SorterItemContainer = styled.div `
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    height: auto;
-    text-align: center;
-    gap: .7rem;
+    margin-bottom: 0;
 `
 
 export const SorterButton = styled.button `
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
     display: inline-block;
-    width: fit-content;
+    width: auto;
     text-align: center;
     text-decoration: none;
     height: 2rem;

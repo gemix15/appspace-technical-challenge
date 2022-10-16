@@ -30,4 +30,7 @@ export const FilterLabel = styled.label `
         background-color: #134611;
         border: 2px solid #134611;
     }
+    @media (max-width: 576px){
+        height: 1.2rem;
+    }
 `
