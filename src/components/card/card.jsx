@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { CardContainer, CardContent, CardImg, CardText, CardTitle, InnerCard } from './card.styled';
-import Rick from "../../img/rick.png";
+import Rick from "../../img/Rick-notFound.png";
 
 const Card = ({page, characters, orderByField}) => {
 

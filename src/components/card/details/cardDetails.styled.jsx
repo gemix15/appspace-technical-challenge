@@ -52,8 +52,11 @@ export const CardDetailBack = styled.button `
     color: white;
     background-color: #3e8914;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    display: block;
     text-decoration: none;
-    vertical-align: middle;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 10%;

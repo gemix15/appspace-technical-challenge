@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import NotFound from '../../../pages/notFound/notFound';
+import Loading from '../../loading/loading';
 import { CardDetailBack, CardDetailContainer, CardDetailGeneral, CardDetailImage, CardDetailSpan, CardDetailTitle } from './cardDetails.styled';
-import Rick from "../../../img/rick.png";
 
 const CardDetails = () => {
+
+    const [loading, setLoading] = useState(true);
+
     let {id} = useParams();
     const [data, setData] = useState([]);
     let { name, status, species, type, gender, origin, location, image } = data;
@@ -12,18 +16,26 @@ const CardDetails = () => {
 
     useEffect(() => {
         (async function (){
+            setLoading(true);
             let response = await fetch(api).then((res) => res.json());
             setData(response);
+            setLoading(false);
         })();
     }, [api]);
 
     let navigate = useNavigate();
 
+    if(loading) {
+        return (
+            <>
+                <Loading/>
+            </>
+        )
+    }
     if(data?.error) {
         return (
             <>
-                <CardDetailBack onClick={() => navigate('/')}>Back</CardDetailBack>
-                <img alt='Rick found no characters.' src={Rick} style={{width:"auto", height:"15rem"}}></img>
+                <NotFound/>
             </>
         )
     }
