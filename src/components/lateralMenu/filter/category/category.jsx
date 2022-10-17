@@ -12,7 +12,7 @@ const Category = ({ title, categories, setCategory, setPageNumber }) => {
     return (
         <AccordionItem>
                 <AccordionButton onClick={handleClick}>{title}</AccordionButton>
-                <AccordionBody open={open}>{categories.map((items, index) => {
+                <AccordionBody open={open}>{categories?.map((items, index) => {
                     return (
                         <FilterButton name={title.toLowerCase()} index={index} key={index} setPageNumber={setPageNumber} 
                                     task={setCategory} input={items}></FilterButton>

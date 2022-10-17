@@ -19,7 +19,7 @@ const Card = ({page, characters, orderByField}) => {
                 <Link to={`${page}${id}`} key={id} style={{width: "auto", textDecoration: "none", color: "black", margin:"auto"}}>
                     <CardContainer>
                         <InnerCard>
-                            <CardImg src={image} alt=''></CardImg>
+                            <CardImg alt={name} src={image}></CardImg>
                             <CardContent>
                                 <CardTitle>{name}</CardTitle>
                                 <div>
