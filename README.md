@@ -11,8 +11,8 @@ Link to the app: https://appspace-rick-and-morty-tech-challenge.vercel.app
 
 ### How to run
 Clone the project and execute the following commands:
-`yarn install ` to install all project dependencies
-`yarn start` to start the project. By default will be on port 3000.
+- `yarn install ` to install all project dependencies
+- `yarn start` to start the project. By default will be on port 3000.
 
 ### Decisions:
 
